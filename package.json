@@ -7,16 +7,17 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["code-execution", "judge", "compiler"],
+  "author": "Chirag Bagde",
   "license": "ISC",
-  "description": "",
+  "description": "Sandboxed code execution server for C++, Python, and JavaScript",
   "dependencies": {
-    "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "express-rate-limit": "^7.5.0",
-    "nodemon": "^3.1.10",
     "shell-escape": "^0.2.0",
     "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
