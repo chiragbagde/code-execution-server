@@ -1,5 +1,5 @@
 const express = require("express");
-const { compileAndRunCpp, executePython, executeJavaScript } = require("./executeCodes");
+const { compileAndRunCpp, executePython, executeJavaScript, compileAndRunJava } = require("./executeCodes");
 const uuid = require("uuid");
 const { generateFile, generateInputFile } = require("./generateFile");
 const { deleteFile } = require("./deleteFile");
@@ -31,6 +31,7 @@ const EXECUTORS = {
   cpp: compileAndRunCpp,
   python: executePython,
   javascript: executeJavaScript,
+  java: compileAndRunJava,
 };
 
 async function executeCode(req, res) {
